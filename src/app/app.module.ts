@@ -14,6 +14,13 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
 import { FaqComponent } from './faq/faq.component';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +38,12 @@ import { FaqComponent } from './faq/faq.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

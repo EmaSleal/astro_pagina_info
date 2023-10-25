@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#servicios, #acerca-de, #contacto {
+    padding: 20px 0;
+}
