@@ -12,7 +12,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
-import { FaqComponent } from './faq/faq.component';
+
 
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,6 +20,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {  HttpClientModule } from '@angular/common/http';
+import { FaqsComponent } from './faqs/faqs.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { FooterComponent } from './footer/footer.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EquipoComponent,
     BlogComponent,
     ContactoComponent,
-    FaqComponent
+
+    FaqsComponent,
+      InicioComponent,
+      FooterComponent,
+      GaleriaComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +52,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

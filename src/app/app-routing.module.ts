@@ -7,9 +7,11 @@ import { TestimoniosComponent } from './testimonios/testimonios.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { FaqsComponent } from './faqs/faqs.component';
 
 const routes: Routes = [
-  //{ path: 'inicio', component: InicioComponent },
+  { path: 'inicio', component: InicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'acerca-de', component: AcercaDeComponent },
   { path: 'contacto', component: ContactoComponent },
@@ -17,7 +19,8 @@ const routes: Routes = [
   { path: 'testimonios', component: TestimoniosComponent },
   { path: 'equipo', component: EquipoComponent },
   { path: 'blog', component: BlogComponent },
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: 'faqs', component: FaqsComponent },
+
 ];
 
 @NgModule({
